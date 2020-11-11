@@ -6,10 +6,14 @@ public class Diplomat {
     private String nev;
     private ArrayList<String> beszeltnyelvek;
 
+    //public Diplomat James_Bond = new Diplomat("James Bond","English","German","French");
     public Diplomat(String nev, ArrayList<String> beszeltnyelvek) {
         this.nev = nev;
         this.beszeltnyelvek = beszeltnyelvek;
+      /*  beszeltnyelvek= new ArrayList<String>();
+        this.beszeltnyelvek= new ArrayList<String>();*/
     }
+
 
     public Diplomat make(String nev, ArrayList<String> beszeltnyelvek){
 
@@ -26,7 +30,7 @@ public class Diplomat {
     }
 
 
-    public ArrayList<String> getBeszeltnyelvek() {
+    public ArrayList<String> speak() {
         return beszeltnyelvek;
     }
 
@@ -44,13 +48,13 @@ public class Diplomat {
         return  beszelie;
     }
 
+    public ArrayList<String> getLanguages() {
+        return beszeltnyelvek;
+    }
 
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Diplomata(" + nev + '\'' + ", [" + beszeltnyelvek+"])";
+    }
 
 }
