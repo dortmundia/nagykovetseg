@@ -24,4 +24,33 @@ public class Diplomat {
     public String getName() {
         return nev;
     }
+
+
+    public ArrayList<String> getBeszeltnyelvek() {
+        return beszeltnyelvek;
+    }
+
+    public boolean speak(String nyelv){
+        boolean beszelie=false;
+
+        for (String i:beszeltnyelvek             ) {
+
+
+            if (beszeltnyelvek.equals(nyelv)) {
+                beszelie = true;
+            }
+        }
+
+        return  beszelie;
+    }
+
+
+
+
+
+
+
+
+
+
 }
